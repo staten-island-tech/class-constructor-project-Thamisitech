@@ -1,0 +1,101 @@
+html{
+    font-size: 62.5%;
+    background-color:aliceblue;
+}
+*, *::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: default;
+}
+.banner{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: slategray;
+    color: hsl(210, 16%, 90%);
+    margin: 2rem auto;
+    height: 20vh;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.text-box{
+    width: 22rem;
+    height: 2.5rem;
+    font-size: 2rem;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height: 10vh;
+}
+.btn, .btn:link, .btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4.0rem;
+	display: inline-block;
+	margin: 1rem;
+	font-size: 2rem;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	animation: moveInBottom .5s ease-out .75s;
+	animation-fill-mode: backwards;
+}
+.btn:hover{
+	transform: translateY(-.3rem);
+	box-shadow: 0 1.0rem 2rem rgba(0,0,0.2);
+
+}
+.btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0.2);
+}
+
+.display{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.display-album{
+    width: 80vw;
+    justify-content: space-around;
+    height: 30vh;
+}
+.display-album img{
+    height: 20rem;
+}
+
+.display-all{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-around;
+
+}
+.display-all img{
+    height: 20rem;
+}
