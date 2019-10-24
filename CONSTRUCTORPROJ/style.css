@@ -6,7 +6,6 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
     cursor: default;
 }
 .banner{
@@ -21,6 +20,7 @@ html{
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    Font-Family: 'Cinzel', Cursive;
 }
 #form{
     display: flex;
@@ -51,6 +51,7 @@ html{
     align-items: center;
     margin: 1rem;
     height: 10vh;
+    Font-Family: 'Fauna One', Serif;
 }
 .btn, .btn:link, .btn:visited {
 	text-transform: uppercase;
@@ -63,7 +64,8 @@ html{
 	transition: all .2s;
 	position: relative;
 	animation: moveInBottom .5s ease-out .75s;
-	animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    Font-Family: 'Fauna One', Serif;
 }
 .btn:hover{
 	transform: translateY(-.3rem);

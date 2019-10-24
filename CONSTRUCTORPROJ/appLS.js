@@ -126,3 +126,4 @@ document.querySelector('.display').addEventListener('click', function(e){
     //Store.removeAlbum(e.target.parentElement)
 })
 
+        
