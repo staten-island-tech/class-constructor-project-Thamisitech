@@ -1,7 +1,7 @@
 class Album{
-    constructor(title, artist, url) {
-        this.title = title;
-        this.artist = artist;
+    constructor(name, year, url) {
+        this.name = name;
+        this.year = year;
         this.url = url;
     }
 }
@@ -10,9 +10,9 @@ class UI {
     addAlbumToList(album) {
         const display = document.querySelector('.display');
 
-        let html = '<div class="display-album flex-row"><div class="display-title">%title%</div><div class="display-artist">%artist%</div><div class="display-cover"><img src="%url%"alt=""></div><div class="remove-album">Remove Waifu! X</div>'
-        let newHtml = html.replace('%title%', album.title);
-        newHtml = newHtml.replace('%artist%', album.artist);
+        let html = '<div class="display-album flex-row"><div class="display-name">%name%</div><div class="display-year">%year%</div><div class="display-cover"><img src="%url%"alt=""></div><div class="remove-album">Remove President! X</div>'
+        let newHtml = html.replace('%name%', album.name);
+        newHtml = newHtml.replace('%year%', album.year);
         newHtml = newHtml.replace('%url%', album.url);
         document.querySelector('.display').insertAdjacentHTML('beforeend', newHtml);
 
@@ -20,8 +20,8 @@ class UI {
     }
 
     clearFields(){
-        document.getElementById('title').value = '';
-        document.getElementById('artist').value = '';
+        document.getElementById('name').value = '';
+        document.getElementById('year').value = '';
         document.getElementById('url').value = '';
     }
 
@@ -35,12 +35,12 @@ class UI {
 //Event Listener for Album
 document.getElementById('form').addEventListener('submit', function(e){
     //Get Values
-    const title = document.getElementById('title').value;
-    const artist = document.getElementById('artist').value;
+    const name = document.getElementById('name').value;
+    const year = document.getElementById('year').value;
     const url = document.getElementById('url').value;
 
     //inmstantiate new album
-    const album = new Album(title, artist, url);
+    const album = new Album(name, year, url);
     //console.log(album);
 
     const ui = new UI();
