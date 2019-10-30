@@ -82,13 +82,13 @@ html{
     text-transform: uppercase;
     letter-spacing: 1rem;
 }
-.display-album{
+.display-profile{
     width: 80vw;
     justify-content: space-around;
     flex-direction:row;
     height: 30vh;
 }
-.display-album img{
+.display-profile img{
     height: 20rem;
 }
 

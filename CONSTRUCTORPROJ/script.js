@@ -10,7 +10,7 @@ class UI {
     addAlbumToList(album) {
         const display = document.querySelector('.display');
 
-        let html = '<div class="display-album flex-row"><div class="display-name">%name%</div><div class="display-year">%year%</div><div class="display-cover"><img src="%url%"alt=""></div><div class="remove-album">Remove President! X</div>'
+        let html = '<div class="display-profile flex-row"><div class="display-name">%name%</div><div class="display-year">%year%</div><div class="display-pic"><img src="%url%"alt=""></div><div class="remove-profile">Remove President! X</div>'
         let newHtml = html.replace('%name%', album.name);
         newHtml = newHtml.replace('%year%', album.year);
         newHtml = newHtml.replace('%url%', album.url);
@@ -26,7 +26,7 @@ class UI {
     }
 
     deleteAlbum(target){
-        if(target.className === 'remove-album') {
+        if(target.className === 'remove-profile') {
             target.parentElement.remove();
         }
     }
